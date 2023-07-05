@@ -6,7 +6,7 @@ const port = 8000;
 
 // API endpoint to execute PowerShell script
 app.get('/execute-script/', (req, res) => {
-  const scriptPath = '../src/Scripts/connect.ps1';
+  const scriptPath = '../src/Scripts/';
 
   exec(`pwsh -ExecutionPolicy Bypass -File ${scriptPath}`, (error, stdout, stderr) => {
     if (error) {
