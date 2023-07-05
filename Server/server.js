@@ -12,7 +12,7 @@ app.get('/execute-script', (req, res) => {
 
   const scriptPath = path.join('../src/Scripts', scriptName);
 
-  exec(`pwsh -ExecutionPolicy Bypass -File "${scriptPath}"`, (error, stdout, stderr) => {
+  exec(`powershell -ExecutionPolicy Bypass -File "${scriptPath}"`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing PowerShell script: ${error.message}`);
       console.error(`Standard Error: ${stderr}`);
