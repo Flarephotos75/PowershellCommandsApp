@@ -40,7 +40,7 @@ const ScriptOptions = () => {
 
   return (
     <div>
-      <h2 className="App-subHeader" >Script Options</h2>
+      <h2 className="App-subHeader" >Choose an Option</h2>
       <div>
         {scriptOptions.map((option, index) => (
           <div className="App-list" key={index}>

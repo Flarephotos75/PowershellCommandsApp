@@ -32,8 +32,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  color: white;
+  color: black;
   text-decoration: underline;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .App-list {
@@ -61,13 +62,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
